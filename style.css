@@ -8,6 +8,7 @@ body{
     background: #fff;
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
+
 }
 
 nav a{
@@ -49,6 +50,45 @@ button{
     border-style: none;
 
 }
+
+#hero{
+    background-image: url("img/intro.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: #fff;
+    color: #374a67;
+    border-color: #fff;
+    border-bottom-style:inherit;
+    font-weight:bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px #374a67 solid;
+    box-shadow: 0px 8px 6px 0px rgba(46,74,117,1);
+    transition: all 1s ease;
+    margin-top: 1rem;
+    display: inline-block;
+
+}
+
+.button:hover{
+
+    color: #fff;
+    background-color: #374a67;
+    border-color: #fff;
+}
+
 @media (min-width: 1024px){
     nav{
         display: block;
