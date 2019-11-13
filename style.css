@@ -101,6 +101,8 @@ button{
 
 .card p a{
     color: #b2b2b2;
+    padding: 2rem;
+    display: inline-block;
 }
 
 .card{
@@ -114,6 +116,8 @@ button{
     color: #fff;
     background-color: #374a67;
     border-color: #fff;
+    margin: 1rem;
+    display: block;
 }
 
 /* Animation */
@@ -125,18 +129,41 @@ button{
 }
 
 .card{
+
     text-align: center;
     box-shadow: 0px 8px 6px 0px rgba(46,74,117,1);
     border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem;}
     /* width: 40%; */
 
 #rezepte h2{
     text-align: center;
 }
 
-    /* okragle obramowanie kartonu, zdjecie nie chce sie do konca dopasowac, mozna to zrobic w photoshopie */
-    overflow: hidden;
+#abo{
+    display: inline-block;
 }
+
+.end{
+    background-color: #04122B;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.end h2{
+    font-size: 20px;
+}
+
+.email{
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
+    /* okragle obramowanie kartonu, zdjecie nie chce sie do konca dopasowac, mozna to zrobic w photoshopie */
+
 /* #rezepte{
 
     text-align: center;
@@ -177,7 +204,7 @@ h3{
     nav{
         display: block;
     }
-    button{
+    nav button{
         display: none;
     }
     nav ul{
@@ -189,5 +216,13 @@ h3{
             padding-left: 5%;
             padding-right: 5%;
         }
+    }
+
+    .row{
+        display: flex;
+    }
+
+    .card{
+        margin: 10px;
     }
 }
