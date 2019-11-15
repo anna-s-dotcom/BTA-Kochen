@@ -25,7 +25,7 @@ ul{list-style-type:none;
 margin-left:-40px;
 }
 
-nav{
+header nav{
     display: none;
 
 }
@@ -33,7 +33,25 @@ nav{
 .show{
 
     display: block;
+    position: absolute;
+    top: 64px;
+    background-color: white;
+    width: 100%;
+    left:0;
+    height: calc(100vh - 64px);
+    /* wysokosc potencjalnego monitora minus wysokosc header */
+    text-align: center;
+    line-height: 3rem;
 
+}
+
+.show li{
+    padding: 0;
+}
+
+
+.overflow{
+    overflow:hidden;
 }
 header{
     display: flex;
@@ -161,50 +179,27 @@ button{
     padding: 1rem;
 }
 
-
-    /* okragle obramowanie kartonu, zdjecie nie chce sie do konca dopasowac, mozna to zrobic w photoshopie */
-
-/* #rezepte{
-
-    text-align: center;
+#social ul{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.card{
-    display: block;
-    height: 100vh;
+    padding: 0;
 
 }
 
-.card img{
-    width: 100%;
-    height: 100%;
+#legal{
+   text-align: center;
 }
+#social ul li{
 
+    margin-left: 1rem;
+    font-size: 2rem;
 }
-
-.card p{
-    text-decoration: none;
-    color: black;
-
-}
-
-.card p a{
-    color: #b2b2b2;
-}
-
-h3{
-    padding: 20px;
-    margin: 20px;
-} */
 
 @media (min-width: 1024px){
-    nav{
+    header nav{
         display: block;
     }
-    nav button{
+    header button{
         display: none;
     }
     nav ul{
@@ -224,5 +219,10 @@ h3{
 
     .card{
         margin: 10px;
+    }
+    #footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
     }
 }
